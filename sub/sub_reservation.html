@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>rooms</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=yes">
+  <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css" />
+  <link href="../css/newreset.css" rel="stylesheet" type="text/css">
+  <link href="../css/common.css" rel="stylesheet" type="text/css">
+  <link href="../css/sub_reservation.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.theme.css">
+  <link rel="stylesheet" type="text/css" href="../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.css">
+  <!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+<![endif]-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="../jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <script src="https://kit.fontawesome.com/ee58d15674.js" crossorigin="anonymous"></script>
+  <script src="../slick/slick.min.js"></script>
+  <script src="../js/vivus.min.js"></script>
+  <script src="../js/sub.js"></script>
+</head>
+
+<body>
+  <div class="wrap clearfix">
+
+    <div class="main">
+      <header>
+        <div class="centerbox clearfix">
+          <h1><a class="ir_pm" href="../sian.html">conrad seoul</a></h1>
+          <nav class="menu">
+            <h2 class="screen_out">navigation</h2>
+            <ul class="gnb">
+              <li><a href="../sub/sub_rooms.html">ROOMS</a></li>
+              <li><a href="#">RESERVATION</a></li>
+              <li><a href="#">FACILITIES</a></li>
+              <li><a href="#">ABOUT US</a></li>
+              <li class="pc ir_pm search"><a href="#">search</a></li>
+            </ul>
+          </nav>
+          <button class="mobile trident">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+    </div>
+
+    <span class="background-main"></span>
+
+    <section>
+      <div class="reservation">
+        <h2>reservation</h2>
+        <form id="reservation" name="reservation" action="reservation.php" method="post">
+          <fieldset>
+            <legend>reservation</legend>
+            <ul>
+              <li class="check-box">
+                <label for="checkin">입실</label>
+                <input type="text" id="checkin" class="check" name="checkin" required readonly="readonly">
+                <i class="far fa-calendar-alt"></i>
+              </li>
+              <li class="check-box">
+                <label for="checkout">퇴실</label>
+                <input type="text" id="checkout" class="check" name="checkout" required readonly="readonly">
+                <i class="far fa-calendar-alt"></i>
+              </li>
+              <li class="room_box">
+                <label for="room_number">객실수</label>
+                <select id="room_number" name="room_number" class="select">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <i class="fas fa-chevron-down"></i>
+              </li>
+              <li class="last-box">
+                <ul class="client-box">
+                  <li>
+                    <label for="client">투숙객</label>
+                    <select id="client" name="client" class="select">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                    </select>
+                    <i class="fas fa-chevron-down"></i>
+                  </li>
+                  <li>
+                    <label for="adult">성인<span>(18+)</span></label>
+                    <select id="adult" name="adult" class="select">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                    </select>
+                  </li>
+                  <li>
+                    <label for="child">어린이<span>(0~6)</span></label>
+                    <select id="child" name="child" class="select">
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                  </li>
+                </ul>
+              </li>
+              <li class="book-box">
+                <label for="book">book now</label>
+                <input type="button" id="book" class="book" name="book">
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </div>
+      <span class="mousewheel mobile">
+        <span></span>
+      </span>
+    </section>
+
+    <section class="sec-2">
+      <div class="service">
+        <h2>특별 계정 및 제공서비스</h2>
+        <p>special promotion or availablle srvice </p>
+        <ul class="service-box clearfix">
+          <li class="service-corona">
+            <h3><span>&#9679;</span> &nbsp; 코로나19 예방대책</h3>
+            <p class="on">콘래드 서울은 모든 고객과 직원의 건강과 안전을 최우선으로 생각합니다.</p>
+          </li>
+          <li class="service-shopping">
+            <h3><span>&#9679;</span> &nbsp; IFC몰 쇼핑 혜택</h3>
+            <p>객실키를 보여주고 최대 20% 쇼핑 할인 혜택을 즐겨보세요</p>
+          </li>
+          <li class="service-pet">
+            <h3><span>&#9679;</span> &nbsp; 반려견 동반 투숙 서비스</h3>
+            <p>반려견 전용 룸서비스를 포함한 콘래드 서울만의 특별한 서비스를 경험해보세요</p>
+          </li>
+          <li class="service-pitnesss">
+            <h3><span>&#9679;</span> &nbsp; 피트니스&amp;스파 이용</h3>
+            <p>최신 시설을 갖춘 스파로 콘래드서울은 기대 이상의 만족을 선사합니다.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    $.datepicker.setDefaults({
+      dateFormat: 'yy-mm-dd',
+      ignoreReadonly: true
+    });
+
+    $(function() {
+      $("#checkin, #checkout").datepicker();
+      /*$('.select').selectmenu();*/
+
+      $('.service-box li').click(function() {
+        var win_w = $(window).width()
+        if (win_w < 1500) {
+          $('.service-box li').find('p').removeClass('on');
+          $(this).find('p').addClass('on');
+        }
+      })
+    });
+
+  </script>
+</body>
+
+</html>
