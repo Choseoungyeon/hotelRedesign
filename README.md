@@ -1,6 +1,8 @@
 # Conrad-Seoul
 hotel website redesign
 
+![fgsdff](https://user-images.githubusercontent.com/97166696/167423407-5f055f70-907e-4729-9eea-53c6e301ebf6.PNG)
+
 https://choseoungyeon.github.io/hotelRedesign/
 
 호텔 브랜드 Conrad Seoul를 리디자인했습니다. 1920, 1024, 768, mobile 반응형 사이즈로 작업했고 깃헙으로 배포했습니다
